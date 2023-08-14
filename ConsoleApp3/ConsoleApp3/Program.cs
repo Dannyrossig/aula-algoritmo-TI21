@@ -13,10 +13,8 @@ namespace ConsoleApp3
         static void Main(string[] args)
         {
 
-            int a;
-            int b;
-            int c;
-            int media;
+            float a, b,c;
+            float soma, media;
 
             Console.WriteLine(" digite numero a"); //Estamos somandos os valores das variaveis a e b e c
             a = int.Parse(Console.ReadLine());
@@ -27,6 +25,7 @@ namespace ConsoleApp3
             Console.WriteLine(" leia resultado da média");
             media = (a+b+c) / 3;
             Console.WriteLine(" o resultado da media é: " + media);
+
 
 
 
