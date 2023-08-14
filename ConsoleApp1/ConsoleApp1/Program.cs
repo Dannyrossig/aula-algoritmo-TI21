@@ -11,13 +11,13 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
 
-            int a;
-            int b;
-            int soma;
-            int subtracao;
-            int multiplicacao;
-            int divisao;
-            int resto;
+            float a;
+            float b;
+            float soma;
+            float subtracao;
+            float multiplicacao;
+            float divisao;
+            float resto;
 
 
             //Console.Write("Hello Word");
