@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
@@ -11,26 +12,58 @@ namespace ConsoleApp8
     {
         static void Main(string[] args)
         {
-            float peso, altura;
-            float imc;
+            double peso, altura;
+            double imc;
 
-            Console.WriteLine(" qual peso");
+
+
+            Console.WriteLine("Qual seu peso: ");
             peso = float.Parse(Console.ReadLine());
-            if (peso <= 18.5)
-            {
 
-            }
 
-            Console.WriteLine(" qual altura");
+
+            Console.WriteLine("Qual a sua altura: ");
             altura = float.Parse(Console.ReadLine());
-            if (altura >= 1.60)
+
+
+
+            imc = peso / Math.Pow(altura, 2);
+
+
+
+            if (imc < 18.5)
             {
+                Console.WriteLine("classificação: MAGREZA");
+
+
 
             }
+            else if (imc <= 24.9)
+            {
+                Console.WriteLine("Classificação: NORMAL");
 
-            Console.WriteLine(" qual imc");
-            imc = float.Parse(Console.ReadLine());
-            if 
+
+
+            }
+            else if (imc <= 29.9)
+            {
+                Console.WriteLine("Classificação: SOBREPESO");
+            }
+            else if (imc <= 34.9)
+            {
+                Console.WriteLine("Classificação: OBESIDADE GRAU 1");
+            }
+            else if (imc <= 39.9)
+            {
+                Console.WriteLine("Classificação: OBESIDADE GRAU 2");
+            }
+            else
+            {
+                Console.WriteLine("Classificação: OBESIDADE GRAU 3");
+            }
+
+
+
 
 
 
